@@ -18,53 +18,44 @@ static propTypes = {
 	pageSize: propTypes.number,
 	category: propTypes.string
 }
-
+	capitalizeFirstLetter = (str) =>{
+		return str.charAt(0).toUpperCase() + str.slice(1);
+	}
 	constructor(props) {
 		super(props);
 		this.state = {
 			articles: [], loading: false, page: 1
 		}
+		document.title= `Charcha Begins on ${this.capitalizeFirstLetter(this.props.category)} `;
 	}
 
+async updateNews(){
+	const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=
+	5acfa1fe3b274374a6a1509189693d5c&page=${this.state.page}&pageSize = ${this.props.pageSize}`;
+	this.setState({loading:true})
+	let data = await fetch(url)
+	let parsedData = await data.json()
+	this.setState({articles: parsedData.articles, totalResults: parsedData.totalResults, loading:false})
+}
 
 	async componentDidMount() {
-		let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5acfa1fe3b274374a6a1509189693d5c&page= 1&pageSize = ${this.props.pageSize}`;
-		this.setState({loading:true})
-		let data = await fetch(url)
-		let parsedData = await data.json()
-		this.setState({articles: parsedData.articles, totalResults: parsedData.totalResults, loading:false})
+		this.updateNews();
 	}
 
 	handlePrevClick = async () => {
-		let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5acfa1fe3b274374a6a1509189693d5c&page=${this.state.page - 1}&pageSize = ${this.props.pageSize}`;
-		let data = await fetch(url)
-		let parsedData = await data.json()
-		this.setState({loading: true})
-		this.setState({})
-		this.setState({
-			page: this.state.page - 1, articles: parsedData.articles, loading: false
-		})
-
+	this.setState({page: this.state.page - 1});
+	this.updateNews();
 	}
 
 	handleNextClick = async () => {
-		if (!(this.state.page + 1 > Math.ceil(this.state.totalResults / this.props.pageSize))) {
-			let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5acfa1fe3b274374a6a1509189693d5c&page=${this.state.page + 1}&pageSize = 
-			${this.props.pageSize}`;
-			this.setState({loading:true});
-			let data = await fetch(url)
-			let parsedData = await data.json()
-			this.setState({
-				page: this.state.page + 1, articles: parsedData.articles, loading: false
-			})
-		}
-
+		this.setState({page: this.state.page + 1});
+		this.updateNews();
 	}
 
 
 	render() {
 		return (<div className="container my-3">
-			<h1 className="text-center">Charcha Begins with Top Headlines</h1>
+			<h2 className="text-center">Charcha Begins with Top {this.capitalizeFirstLetter(this.props.category)} Headlines</h2>
 			{this.state.loading && <Spinner/>}
 			<div className="row">
 				{!this.state.loading && this.state.articles.map((element) => {
