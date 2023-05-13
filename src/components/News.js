@@ -1,8 +1,23 @@
 import React, {Component} from 'react';
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
+import propTypes from "prop-types";
+
 
 class News extends Component {
+
+	static defaultProps = {
+		country: "in",
+		pageSize:[5],
+		category:'general'
+
+}
+
+static propTypes = {
+	country: propTypes.string,
+	pageSize: propTypes.number,
+	category: propTypes.string
+}
 
 	constructor(props) {
 		super(props);
@@ -12,7 +27,7 @@ class News extends Component {
 	}
 
 	async componentDidMount() {
-		let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=5acfa1fe3b274374a6a1509189693d5c&page= 1&pageSize = ${this.props.pageSize}`;
+		let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5acfa1fe3b274374a6a1509189693d5c&page= 1&pageSize = ${this.props.pageSize}`;
 		this.setState({loading:true})
 		let data = await fetch(url)
 		let parsedData = await data.json()
@@ -20,7 +35,7 @@ class News extends Component {
 	}
 
 	handlePrevClick = async () => {
-		let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=5acfa1fe3b274374a6a1509189693d5c&page=${this.state.page - 1}&pageSize = ${this.props.pageSize}`;
+		let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5acfa1fe3b274374a6a1509189693d5c&page=${this.state.page - 1}&pageSize = ${this.props.pageSize}`;
 		let data = await fetch(url)
 		let parsedData = await data.json()
 		this.setState({loading: true})
@@ -33,7 +48,7 @@ class News extends Component {
 
 	handleNextClick = async () => {
 		if (!(this.state.page + 1 > Math.ceil(this.state.totalResults / this.props.pageSize))) {
-			let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=5acfa1fe3b274374a6a1509189693d5c&page=${this.state.page + 1}&pageSize = 
+			let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5acfa1fe3b274374a6a1509189693d5c&page=${this.state.page + 1}&pageSize = 
 			${this.props.pageSize}`;
 			this.setState({loading:true});
 			let data = await fetch(url)
@@ -55,9 +70,11 @@ class News extends Component {
 					return <div className="col-md-4" key={element.url}>
 						<NewsItem
 							title={element.title?.slice(0, 80)}
-							description={element.description?.slice(0, 100)}
+							description={element.description?.slice(0, 80)}
 							imageUrl={element.urlToImage}
 							newsUrl={element.url}
+							author={element.author}
+							date={element.publishedAt}
 						/>
 					</div>
 				})}
