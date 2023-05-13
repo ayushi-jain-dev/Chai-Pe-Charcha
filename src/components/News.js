@@ -75,6 +75,7 @@ static propTypes = {
 							newsUrl={element.url}
 							author={element.author}
 							date={element.publishedAt}
+							source ={element.source.name}
 						/>
 					</div>
 				})}
