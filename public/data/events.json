@@ -1,0 +1,30 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Music Concert",
+      "date": "2023-07-15",
+      "location": "ABC Arena",
+      "description": "A live music concert featuring popular artists.",
+      "ticketsAvailable": true,
+      "ticketPrice": 25.99
+    },
+    {
+      "id": 2,
+      "title": "Art Exhibition",
+      "date": "2023-08-05",
+      "location": "XYZ Gallery",
+      "description": "An exhibition showcasing contemporary artworks.",
+      "ticketsAvailable": true,
+      "ticketPrice": 10.5
+    },
+    {
+      "id": 3,
+      "title": "Tech Conference",
+      "date": "2023-09-20",
+      "location": "Convention Center",
+      "description": "A conference focusing on the latest technology trends.",
+      "ticketsAvailable": false
+    }
+  ]
+}

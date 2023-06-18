@@ -1,0 +1,40 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "10 Tips for Effective Time Management",
+      "author": "John Smith",
+      "date": "2023-06-10",
+      "content": "In today's fast-paced world, effective time management...",
+      "tags": [
+        "time management",
+        "productivity",
+        "self-improvement"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Benefits of Regular Exercise",
+      "author": "Jane Doe",
+      "date": "2023-06-15",
+      "content": "Regular exercise is essential for maintaining a healthy...",
+      "tags": [
+        "fitness",
+        "health",
+        "wellness"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "A Beginner's Guide to Cooking",
+      "author": "Samuel Lee",
+      "date": "2023-06-20",
+      "content": "If you're new to cooking, this beginner's guide...",
+      "tags": [
+        "cooking",
+        "recipes",
+        "kitchen tips"
+      ]
+    }
+  ]
+}

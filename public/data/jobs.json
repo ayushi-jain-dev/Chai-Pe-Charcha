@@ -1,0 +1,43 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Software Engineer",
+      "company": "ABC Tech",
+      "location": "New York",
+      "salary": 80000,
+      "description": "We are seeking a skilled software engineer...",
+      "requirements": [
+        "Bachelor's degree in Computer Science",
+        "Proficiency in Java and Python",
+        "Experience with web application development"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Marketing Specialist",
+      "company": "XYZ Corp",
+      "location": "San Francisco",
+      "salary": 60000,
+      "description": "We are looking for a creative marketing specialist...",
+      "requirements": [
+        "Bachelor's degree in Marketing or related field",
+        "Excellent written and verbal communication skills",
+        "Experience with social media marketing"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Graphic Designer",
+      "company": "PQR Designs",
+      "location": "London",
+      "salary": 45000,
+      "description": "We are hiring a talented graphic designer...",
+      "requirements": [
+        "Bachelor's degree in Graphic Design or related field",
+        "Proficiency in Adobe Creative Suite",
+        "Portfolio showcasing previous design work"
+      ]
+    }
+  ]
+}

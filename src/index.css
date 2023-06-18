@@ -1,0 +1,347 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#logo img {
+  margin: 9px 7px;
+  height: 87px;
+
+}
+
+/* Navigation Bar */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  top: 0px;
+
+}
+
+#navbar::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+}
+
+/* Navigation Bar: Logo and Image */
+
+.navcenter {
+  display: flex;
+  opacity: 0.8;
+  background-color: rgb(132, 85, 146);
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  margin-left: 324px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: rgb(249, 247, 247);
+  font-weight: 900;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: rgb(7, 6, 6);
+  background-color: rgb(206, 235, 177);
+}
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 62px 354px;
+  height: 689px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero::before {
+  content: "";
+  background: url("assets/images/blog/Image 1.jpeg") no-repeat center center/cover;
+  position: absolute;
+  height: 758px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.67;
+}
+
+.hero h1 {
+  color: rgb(16 16 14);
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: 53px;
+  padding-top: 10px;
+}
+
+.hero p {
+  color: rgb(16 16 14);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 500;
+}
+
+.hero img {
+  height: 511px;
+  width: 774px;
+  z-index: -1;
+
+}
+
+.blogs a {
+  display: flex;
+  justify-content: center;
+  color: rgb(7, 8, 8);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.blogs a:hover {
+  color: rgb(62, 151, 126);
+  /* background-color: black; */
+}
+
+/* Segments Section */
+
+.segments {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.segment {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.segment img {
+  width: 80px;
+  height: 80px;
+}
+
+.sub-segments {
+  margin-top: 1rem;
+}
+
+.sub-segment {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.sub-segment img {
+  width: 40px;
+  height: 40px;
+}
+
+.sub-segment h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.sub-segment p {
+  margin: 0;
+}
+
+
+/* News Feed Segment */
+
+.news-feed {
+  margin-bottom: 2rem;
+}
+
+.news-feed h2 {
+  text-align: center;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.news-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.news-item h3 {
+  margin-top: 0;
+}
+
+.publication-date,
+.excerpt {
+  margin-bottom: 0.5rem;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: #ff5555;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  background-color: #cc0000;
+}
+
+/* Events Section */
+
+.events {
+  margin-bottom: 2rem;
+}
+
+.events h2 {
+  text-align: center;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.event-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.event-item h3 {
+  margin-top: 0;
+}
+
+.event-date,
+.event-location,
+.event-description {
+  margin-bottom: 0.5rem;
+}
+
+.learn-more {
+  display: inline-block;
+  background-color: #ff5555;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  background-color: #cc0000;
+}
+
+/* Jobs Sections */
+
+.jobs {
+  margin-bottom: 2rem;
+}
+
+.jobs h2 {
+  text-align: center;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.job-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.job-item h3 {
+  margin-top: 0;
+}
+
+.company,
+.location,
+.description {
+  margin-bottom: 0.5rem;
+}
+
+.apply-now {
+  display: inline-block;
+  background-color: #ff5555;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.apply-now:hover {
+  background-color: #cc0000;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #333;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}

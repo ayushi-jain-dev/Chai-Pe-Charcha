@@ -1,0 +1,28 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "Breaking News: Earthquake Hits City A",
+      "source": "ABC News",
+      "date": "2023-06-10",
+      "description": "A strong earthquake measuring 7.5 on the Richter scale...",
+      "url": "https://www.example.com/article/1"
+    },
+    {
+      "id": 2,
+      "title": "Technology Company X Unveils New Product Line",
+      "source": "Tech Today",
+      "date": "2023-06-15",
+      "description": "Technology company X has announced its latest product line...",
+      "url": "https://www.example.com/article/2"
+    },
+    {
+      "id": 3,
+      "title": "Health Study Reveals Surprising Benefits of Green Tea",
+      "source": "Health Magazine",
+      "date": "2023-06-20",
+      "description": "A recent health study suggests that green tea...",
+      "url": "https://www.example.com/article/3"
+    }
+  ]
+}
