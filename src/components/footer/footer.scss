@@ -1,0 +1,38 @@
+footer {
+  color: white;
+  background-color: #090808;
+  padding: 1rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    width: 790px;
+  }
+
+  .footer-links {
+    margin-bottom: 0.5rem;
+
+    a {
+      color: white;
+      margin-right: 1rem;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .social-media {
+    margin-top: 0.5rem;
+
+    .social-icon {
+      display: inline-block;
+      margin-right: 1rem;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

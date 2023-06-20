@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Software Engineer",
-      "company": "ABC Tech",
+      "company": "Knowledge Tech",
       "location": "New York",
       "salary": 80000,
       "description": "We are seeking a skilled software engineer...",
@@ -16,7 +16,7 @@
     {
       "id": 2,
       "title": "Marketing Specialist",
-      "company": "XYZ Corp",
+      "company": "Kohl's Corp",
       "location": "San Francisco",
       "salary": 60000,
       "description": "We are looking for a creative marketing specialist...",
@@ -29,10 +29,23 @@
     {
       "id": 3,
       "title": "Graphic Designer",
-      "company": "PQR Designs",
+      "company": "Saviour Designs",
       "location": "London",
       "salary": 45000,
       "description": "We are hiring a talented graphic designer...",
+      "requirements": [
+        "Bachelor's degree in Graphic Design or related field",
+        "Proficiency in Adobe Creative Suite",
+        "Portfolio showcasing previous design work"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Data Engineer",
+      "company": "Novartis India",
+      "location": "Chennai, India",
+      "salary": 45000,
+      "description": "We are hiring a talented engineer...",
       "requirements": [
         "Bachelor's degree in Graphic Design or related field",
         "Proficiency in Adobe Creative Suite",

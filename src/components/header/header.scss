@@ -1,0 +1,64 @@
+.header-component {
+  .navcenter {
+    display: flex;
+    background-color: #000;
+    height: 71px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  #logo {
+    h2 {
+      color: #ffffff;
+    }
+  }
+
+  #navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    top: 0;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      margin-left: -340px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      font-family: 'Libre Baskerville', serif;
+      margin-bottom: 0;
+
+      li {
+        list-style: none;
+        font-size: 1rem;
+
+        a {
+          color: rgb(249, 247, 247);
+          display: block;
+          padding: 3px 22px;
+          border-radius: 20px;
+          text-decoration: none;
+
+          &:hover {
+            color: rgb(7, 6, 6);
+            background-color: rgb(206, 235, 177);
+          }
+        }
+      }
+    }
+  }
+}

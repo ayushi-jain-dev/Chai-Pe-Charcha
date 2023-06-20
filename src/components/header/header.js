@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from 'react-scroll';
+import './header.scss';
 
 const Header = () => {
 	return (
-		<header className="fixed-top">
+		<header className="header-component fixed-top">
 			<div className="navcenter">
 				<div id="logo">
-					<h2>Blogs Website</h2>
+					<h2>Event Catalyst</h2>
 				</div>
 				<nav id="navbar">
 					<ul>
@@ -17,7 +18,7 @@ const Header = () => {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								duration={500}
+								duration={100}
 							>
 								Home
 							</Link>
@@ -29,7 +30,7 @@ const Header = () => {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								duration={500}
+								duration={100}
 							>
 								Blogs
 							</Link>
@@ -41,7 +42,7 @@ const Header = () => {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								duration={500}
+								duration={100}
 							>
 								News
 							</Link>
@@ -53,7 +54,7 @@ const Header = () => {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								duration={500}
+								duration={100}
 							>
 								Events
 							</Link>
@@ -65,7 +66,7 @@ const Header = () => {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								duration={500}
+								duration={100}
 							>
 								Jobs
 							</Link>

@@ -1,39 +1,124 @@
 {
-  "blogs": [
+  "techblogs": [
     {
       "id": 1,
-      "title": "10 Tips for Effective Time Management",
+      "title": "The Rise of Artificial Intelligence in Healthcare",
       "author": "John Smith",
       "date": "2023-06-10",
-      "content": "In today's fast-paced world, effective time management...",
+      "category": "Artificial Intelligence",
+      "content": "Artificial Intelligence (AI) is transforming the healthcare industry...",
       "tags": [
-        "time management",
-        "productivity",
-        "self-improvement"
+        "AI",
+        "healthcare",
+        "machine learning"
       ]
     },
     {
       "id": 2,
-      "title": "The Benefits of Regular Exercise",
+      "title": "Exploring the Potential of Blockchain Technology",
       "author": "Jane Doe",
       "date": "2023-06-15",
-      "content": "Regular exercise is essential for maintaining a healthy...",
+      "category": "Blockchain",
+      "content": "Blockchain technology has the potential to revolutionize...",
       "tags": [
-        "fitness",
-        "health",
-        "wellness"
+        "blockchain",
+        "cryptocurrency",
+        "decentralization"
       ]
     },
     {
       "id": 3,
-      "title": "A Beginner's Guide to Cooking",
+      "title": "The Future of Internet of Things (IoT)",
       "author": "Samuel Lee",
       "date": "2023-06-20",
-      "content": "If you're new to cooking, this beginner's guide...",
+      "category": "Internet of Things",
+      "content": "The Internet of Things (IoT) is reshaping how we interact...",
       "tags": [
-        "cooking",
-        "recipes",
-        "kitchen tips"
+        "IoT",
+        "smart devices",
+        "connectivity"
+      ]
+    }
+  ],
+  "artblogs": [
+    {
+      "id": 1,
+      "title": "Exploring the Beauty of Impressionist Art",
+      "author": "Wilson Smith",
+      "date": "2023-06-10",
+      "category": "Art",
+      "content": "Impressionism is a captivating art movement...",
+      "tags": [
+        "art",
+        "impressionism",
+        "painting"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Influence of Music in Different Cultures",
+      "author": "Adalind Schade",
+      "date": "2023-06-15",
+      "category": "Culture",
+      "content": "Music plays a significant role in shaping...",
+      "tags": [
+        "music",
+        "culture",
+        "diversity"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Unleashing Creativity: Tips for Artists and Designers",
+      "author": "Nick Johnson",
+      "date": "2023-06-20",
+      "category": "Creativity",
+      "content": "Creativity is a powerful force that fuels...",
+      "tags": [
+        "creativity",
+        "artistic inspiration",
+        "design"
+      ]
+    }
+  ],
+  "travelblogs": [
+    {
+      "id": 1,
+      "title": "A Journey to the Enchanting Land of Iceland",
+      "author": "Avery Smith",
+      "date": "2023-06-10",
+      "category": "Travel",
+      "content": "Iceland is a mesmerizing destination that offers...",
+      "tags": [
+        "travel",
+        "Iceland",
+        "adventure"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Hiking the Majestic Peaks of the Himalayas",
+      "author": "Yun Lee",
+      "date": "2023-06-15",
+      "category": "Adventure",
+      "content": "The Himalayas provide an awe-inspiring backdrop...",
+      "tags": [
+        "adventure",
+        "hiking",
+        "mountains"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Exploring the Hidden Gems of Ancient Ruins",
+      "author": "Samuel Smith",
+      "date": "2023-06-20",
+      "category": "Exploration",
+      "content": "Ancient ruins hold secrets of past civilizations...",
+      "tags": [
+        "exploration",
+        "history",
+        "archaeology"
       ]
     }
   ]

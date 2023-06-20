@@ -14,32 +14,32 @@ const App = () => {
 	const pageSize = 15;
 	const apiKey = process.env.REACT_APP_NEWS_API;
 	const country = "in";
-	const [progress, setProgress] = useState(0);
+	// const [progress, setProgress] = useState(0);
 
 	return (
 		<Router>
 			<Header/>
-			<LoadingBar
-				height={3}
-				color='#f11946'
-				progress={progress}
-			/>
+			{/*<LoadingBar*/}
+			{/*	height={3}*/}
+			{/*	color='#f11946'*/}
+			{/*	progress={progress}*/}
+			{/*/>*/}
 			<Routes>
 				<Route
 					exact
 					path="/"
 					element={<Blogs/>}
 				/>
-				<Route
-					exact
-					path="/news"
-					element={<News
-						setProgress={setProgress} apiKey={apiKey} key="general"
-						pageSize={pageSize}
-						country={country}
-						category="general"
-					/>}
-				/>
+				{/*<Route*/}
+				{/*	exact*/}
+				{/*	path="/news"*/}
+				{/*	element={<News*/}
+				{/*		setProgress={setProgress} apiKey={apiKey} key="general"*/}
+				{/*		pageSize={pageSize}*/}
+				{/*		country={country}*/}
+				{/*		category="general"*/}
+				{/*	/>}*/}
+				{/*/>*/}
 				<Route
 					exact
 					path="/blogs"
